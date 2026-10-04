@@ -202,6 +202,59 @@ body {
     text-align: center;
 }
 
+
+/* Каталог услуг */
+
+.catalog-header {
+    padding: 70px 0 50px;
+    background-color: #15181e;
+}
+
+.catalog-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.catalog-header p {
+    max-width: 650px;
+    color: #b4b7bf;
+    font-size: 18px;
+}
+
+.catalog {
+    padding: 70px 0;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.catalog-card {
+    background-color: #191c23;
+    border: 1px solid #2a2e38;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.catalog-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.catalog-card p {
+    color: #b4b7bf;
+    margin-bottom: 25px;
+}
+
+.service-info {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 /* Адаптивность */
 
 @media (max-width: 800px) {
@@ -236,4 +289,11 @@ body {
     .advantages-grid {
         grid-template-columns: 1fr;
     }
+    .catalog-grid {
+    grid-template-columns: 1fr;
+}
+
+.catalog-header h1 {
+    font-size: 34px;
+}
 }
