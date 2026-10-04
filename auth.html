@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - AutoDrive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">AutoDrive</a>
+
+            <nav class="navigation">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Услуги</a>
+                <a href="index.html#about">О нас</a>
+                <a href="auth.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+
+        <div class="container auth-container">
+
+            <section class="auth-card">
+                <h1>Вход</h1>
+
+                <form>
+                    <label for="login-email">Email</label>
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="example@mail.ru"
+                        required
+                    >
+
+                    <label for="login-password">Пароль</label>
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Введите пароль"
+                        required
+                    >
+
+                    <button type="submit" class="button">Войти</button>
+                </form>
+            </section>
+
+            <section class="auth-card">
+                <h1>Регистрация</h1>
+
+                <form>
+                    <label for="register-name">Имя</label>
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Ваше имя"
+                        required
+                    >
+
+                    <label for="register-email">Email</label>
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="example@mail.ru"
+                        required
+                    >
+
+                    <label for="register-password">Пароль</label>
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Придумайте пароль"
+                        required
+                    >
+
+                    <button type="submit" class="button">Зарегистрироваться</button>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 AutoDrive. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
