@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Основные стили */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1115;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+
+.header {
+    background-color: #171a21;
+    border-bottom: 1px solid #2a2e38;
+}
+
+.header-container {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    color: #c7c9ce;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #e63946;
+}
+
+/* Главный блок */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #0d0f13, #1b1f27);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #b4b7bf;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #c92f3b;
+}
+
+/* Услуги */
+
+.services {
+    padding: 80px 0;
+}
+
+.services h2,
+.advantages h2,
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #191c23;
+    border: 1px solid #2a2e38;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #e63946;
+}
+
+.service-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #b4b7bf;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+/* Преимущества */
+
+.advantages {
+    padding: 80px 0;
+    background-color: #15181e;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.advantage {
+    padding: 25px;
+}
+
+.advantage h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.advantage p {
+    color: #b4b7bf;
+}
+
+/* О нас */
+
+.about {
+    padding: 80px 0;
+}
+
+.about p {
+    max-width: 800px;
+    color: #b4b7bf;
+    font-size: 18px;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: #171a21;
+    border-top: 1px solid #2a2e38;
+    padding: 30px 0;
+    color: #8d9199;
+    text-align: center;
+}
+
+/* Адаптивность */
+
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .navigation {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}
