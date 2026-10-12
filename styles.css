@@ -62,25 +62,25 @@ body {
 
 /* Главный блок */
 
-.hero {
+.main-section {
     min-height: 520px;
     display: flex;
     align-items: center;
     background: linear-gradient(120deg, #0d0f13, #1b1f27);
 }
 
-.hero-content {
+.main-content {
     max-width: 800px;
 }
 
-.hero h1 {
+.main-section h1 {
     max-width: 750px;
     font-size: 52px;
     line-height: 1.1;
     margin-bottom: 25px;
 }
 
-.hero p {
+.main-section p {
     max-width: 650px;
     color: #b4b7bf;
     font-size: 20px;
@@ -117,14 +117,14 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1px);
     gap: 25px;
 }
 
 .service-card {
     background-color: #191c23;
     border: 1px solid #2a2e38;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 30px;
     transition: 0.3s;
 }
@@ -201,7 +201,6 @@ body {
     color: #8d9199;
     text-align: center;
 }
-
 
 /* Каталог услуг */
 
@@ -312,6 +311,7 @@ body {
     font-size: 16px;
     margin-top: 5px;
 }
+
 /* Адаптивность */
 
 @media (max-width: 800px) {
@@ -327,15 +327,15 @@ body {
         justify-content: center;
     }
 
-    .hero {
+    .main-section {
         min-height: 450px;
     }
 
-    .hero h1 {
+    .main-section h1 {
         font-size: 38px;
     }
 
-    .hero p {
+    .main-section p {
         font-size: 18px;
     }
 
@@ -346,15 +346,16 @@ body {
     .advantages-grid {
         grid-template-columns: 1fr;
     }
+
     .catalog-grid {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 
-.catalog-header h1 {
-    font-size: 34px;
-}
+    .catalog-header h1 {
+        font-size: 34px;
+    }
 
-.auth-container {
-    grid-template-columns: 1fr;
-}
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
 }
