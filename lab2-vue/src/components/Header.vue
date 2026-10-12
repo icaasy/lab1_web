@@ -1,13 +1,19 @@
+<script setup>
+defineEmits(['changePage'])
+</script>
+
 <template>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">AutoDrive</a>
+            <a href="#" class="logo" @click.prevent="$emit('changePage', 'home')">
+                AutoDrive
+            </a>
 
             <nav class="navigation">
-                <a href="#">Главная</a>
-                <a href="#">Услуги</a>
-                <a href="#">О нас</a>
-                <a href="#">Войти</a>
+                <a href="#" @click.prevent="$emit('changePage', 'home')">Главная</a>
+                <a href="#" @click.prevent="$emit('changePage', 'catalog')">Услуги</a>
+                <a href="#" @click.prevent="$emit('changePage', 'about')">О нас</a>
+                <a href="#" @click.prevent="$emit('changePage', 'auth')">Войти</a>
             </nav>
         </div>
     </header>

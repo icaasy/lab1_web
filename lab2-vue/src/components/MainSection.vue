@@ -1,3 +1,11 @@
+<script setup>
+const emit = defineEmits(['changePage'])
+
+function openCatalog() {
+    emit('changePage', 'catalog')
+}
+</script>
+
 <template>
     <section class="main-section">
         <div class="container main-content">
@@ -8,7 +16,9 @@
                 и защита кузова с использованием профессиональных материалов.
             </p>
 
-            <a href="#" class="button">Смотреть услуги</a>
+            <button class="button" @click="openCatalog">
+                Смотреть услуги
+            </button>
         </div>
     </section>
 </template>

@@ -1,4 +1,6 @@
 <script setup>
+defineEmits(['changePage'])
+
 const services = [
     {
         name: 'Полировка кузова',
@@ -28,7 +30,13 @@ const services = [
                 >
                     <h3>{{ service.name }}</h3>
                     <p>{{ service.description }}</p>
-                    <a href="#">Подробнее</a>
+
+                    <a
+                        href="#"
+                        @click.prevent="$emit('changePage', 'catalog')"
+                    >
+                        Подробнее
+                    </a>
                 </article>
             </div>
         </div>
