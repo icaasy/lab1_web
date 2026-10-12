@@ -1,7 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import MainSection from './components/MainSection.vue'
+import Services from './components/Services.vue'
+import Advantages from './components/Advantages.vue'
+import About from './components/About.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <HelloWorld />
+    <Header />
+    <MainSection />
+    <Services />
+    <Advantages />
+    <About />
+    <Footer />
 </template>
